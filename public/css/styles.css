@@ -1,0 +1,82 @@
+body {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a { /* links within "nav" container */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white;          /* by default, links are blue */
+}
+
+nav a:hover { /*pseudo class */
+    border-bottom: 2px whitesmoke solid;
+    font-size: 2em;
+    transition: .9s; /* transition effect */
+}
+
+#me, #welcomeText {
+    float: left;
+}
+
+footer {
+    clear: left;
+    color: dimgray;
+    font-size: 12px;
+}
+
+#welcomeText {
+    text-align: left;
+}
+
+#home, #about, #contact {
+    color: darkgoldenrod;
+}
+
+table {
+    margin: 0px auto;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+    color: dimgray;
+}
+
+td strong {
+    color: white;
+}
+
+#table-header {
+    background-color: dimgray;
+}
+
+.table-row {
+    background-color: whitesmoke;
+}
+
+ul {
+    text-align: left;
+    padding-left: 200px;
+}
+
+.hobby {
+    color: darkgoldenrod;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+#content {
+    text-align: center;
+    margin: auto;
+}
