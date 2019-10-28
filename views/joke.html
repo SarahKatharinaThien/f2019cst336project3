@@ -19,15 +19,8 @@
 <button id="btn" class="btn btn-outline-primary">Click for a random knock-knock joke</button>
 
 <script>
-    const knockknock = require('knock-knock-jokes');
-
-    $('#btn').on("click", randomJoke);
-
-    function randomJoke() {
-        let joke = knockknock();
-        $('#joke').html(joke);
-    }
-
+    const randomJoke = require('./module');
+    $('#randomjoke').html(randomJoke.joke());
 </script>
 
 <% include partials/footer.ejs %>
