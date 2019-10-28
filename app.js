@@ -12,7 +12,9 @@ app.get("/about", function (req, res) {
     res.render("about.html");
 });
 
-app.get("/contact")
+app.get("/contact", function (req, res) {
+    res.render("contact.html");
+});
 
 // server listener
 app.listen(process.env.PORT, process.env.IP, function () {
