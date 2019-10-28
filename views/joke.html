@@ -1,0 +1,34 @@
+<% include partials/header.ejs %>
+
+<header>
+    <h1>Sarah Katharina Thien</h1>
+</header>
+<br><br>
+<div id="joke">
+
+</div>
+<br><br>
+<button id="btn" class="btn btn-outline-primary">Click for a random knock-knock joke</button>
+<nav>
+    <hr width="50%" />
+    <a id="home" href="index.html">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a id="randomjoke" href="/joke">Contact</a>
+</nav>
+
+<br /><br />
+
+<script>
+    const knockknock = require('knock-knock-jokes');
+
+    $('#btn').on("click", randomJoke);
+
+    function randomJoke() {
+        let joke = knockknock();
+        $('#joke').html(joke);
+    }
+
+</script>
+
+<% include partials/footer.ejs %>

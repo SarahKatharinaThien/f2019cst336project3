@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
@@ -18,6 +19,10 @@ app.get("/about", function (req, res) {
 
 app.get("/contact", function (req, res) {
     res.render("contact.html");
+});
+
+app.get("/joke", function (req, res) {
+    res.render("joke.html");
 });
 
 // server listener
