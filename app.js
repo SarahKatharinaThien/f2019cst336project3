@@ -17,7 +17,7 @@ app.get("/challenges", function (req, res) {
     res.render("challenges.html");
 });
 
-app.get("/testing", function (req, res) {
+app.get("/test", function (req, res) {
     res.render("testing.html");
 });
 
