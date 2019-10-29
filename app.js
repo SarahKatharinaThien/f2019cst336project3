@@ -5,15 +5,15 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 // routes
-app.get("/index", function (req, res) {
-    res.render("index.html");
+app.get("/", function (req, res) {
+   res.render("index.html");
 });
 
 app.get("/challenges", function (req, res) {
     res.render("challenges.html");
 });
 
-app.get("/test", function (req, res) {
+app.get("/testing", function (req, res) {
     res.render("testing.html");
 });
 
