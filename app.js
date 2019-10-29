@@ -5,10 +5,6 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 // routes
-app.get("/", function (req, res) {
-   res.render("index.html");
-});
-
 app.get("/index", function (req, res) {
     res.render("index.html");
 });
