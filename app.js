@@ -21,7 +21,7 @@ app.get("/contact", function (req, res) {
     res.render("testing.html");
 });
 
-app.get("/joke", function (req, res) {
+app.get("/types", function (req, res) {
     res.render("types.html");
 });
 
