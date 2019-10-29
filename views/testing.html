@@ -1,0 +1,96 @@
+<% include partials/header.ejs %>
+
+<div id="header">
+    <h1>Machine Learning</h1>
+</div>
+<div class="topnav">
+    <a href="/main">Home</a>
+    <a href="/types">Types of Machine Learning Systems</a>
+    <a href=/challenges">Main Challenges</a>
+    <a id="test" href="/testing">Testing & Validating</a>
+</div>
+
+<div id="content" class="column-flex-container">
+    <br><br><br><br>
+    <div class="blue-background">
+        In order to find out if your model will work well with new cases you have to try it out with new cases.
+        <br>
+        But this should not be done by starting the production since a bad outcome could have a bad influence on your
+        reputation.
+    </div>
+
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>Split your data into two sets</h2>
+        </div>
+        <div class="text-align-left" id="sets">
+            <h4>Training Set</h4>
+            Train your system with the training.
+            <h4>Test Set</h4>
+            Test your system with the test set.
+        </div>
+    </div>
+
+    <div class="blue-background">
+        <img src="/img/testing.png"
+             alt="A cartoon about the possible outcomes of testing by different people."/>
+    </div>
+
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>How to split your data</h2>
+        </div>
+        <div class="text-align-left">
+            <h4>Training Set</h4>
+            Use 80% of your data as training set.
+            <h4>Test Set</h4>
+            Use 20% of your data as test set. The fraction of the test set usually gets lower when the amount of data
+            gets bigger.
+        </div>
+    </div>
+
+    <div class="blue-background">
+        “As one Google Translate engineer put it, "when you go from 10,000 training examples to 10 billion training
+        examples, it all starts to work. Data trumps everything.”
+        <br>
+        - Garry Kasparov, Deep Thinking: Where Machine Intelligence Ends and Human Creativity Begins
+    </div>
+
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>Which model should you use?</h2>
+        </div>
+        <div class="text-align-left">
+            <h4>Training Set</h4>
+            Train two or more models with your training set.
+            <h4>Test Set</h4>
+            Compare how well the models work with the test set afterwards. Therefore, you can compare the so called <em>generalization
+            error</em>. The generalization error is the error rate on new cases.
+        </div>
+    </div>
+    <div>
+        <h2>Sources</h2>
+        <div class="row-flex-container">
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Testing & Validation" onclick="window.location.href='https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/ch01.html#landscape_chapter'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Picture" onclick="window.location.href='https://blog.algorithmia.com/deploying-machine-learning-at-scale/'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Quote" onclick="window.location.href='https://www.goodreads.com/quotes/tag/machine-learning'" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+</div>
+
+<% include partials/footer.ejs %>

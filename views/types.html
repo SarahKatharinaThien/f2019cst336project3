@@ -1,0 +1,121 @@
+<% include partials/header.ejs %>
+
+<div id="header">
+    <h1>Machine Learning</h1>
+</div>
+
+<div class="topnav">
+    <a href="/index">Home</a>
+    <a id="types" href="/types">Types of Machine Learning Systems</a>
+    <a href="/challenges">Main Challenges</a>
+    <a href="/testing">Testing & Validating</a>
+</div>
+
+<div id="content" class="column-flex-container">
+    <br><br><br><br>
+    <div class="blue-background">
+        There are many types of Machine Learning systems. That's is why these systems are classified in the following
+        categories:
+    </div>
+
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>Supervised, Unsupervised, Semisupervised and Reinforcement Learning</h2>
+            Is the system trained with human supervision?
+        </div>
+        <div class="text-align-left">
+            <h4>Supervised Learning</h4>
+            In this case the training set for the algorithm includes the desired solutions. These solutions are called
+            label.
+            <h4>Unsupervised Learning</h4>
+            Unsupervised learning uses only unlabelled data. The systems learn on its own and tries to find a pattern.
+            <h4>Semisupervised Learning</h4>
+            Semisupervised learning works with both labeled and unlabeled data.
+            <h4>Reinforcement Learning</h4>
+            In this context the learning system observes the environment, selects an action and performs this action.
+            Afterwards
+            the system get a reward or a penalty depend on the action. Thus, this system can learn on its own what is
+            the best
+            strategy.
+        </div>
+    </div>
+
+    <div class="blue-background">
+        <img src="/img/unsupervised-supervised-learning.png"
+             alt="A cartoon as an example for supervised and unsupervised learning"/>
+    </div>
+
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>Online and Batch Learning</h2>
+            Can the system learn incrementally on the fly?
+        </div>
+        <div class="text-align-left">
+            <h4>Online Learning</h4>
+            The system learns incrementally by giving it new data constantly. The system is able to adapt easily and
+            fast.
+            <h4>Batch Learning</h4>
+            In this context the system is unable to learn incrementally. First you have to train the system with the
+            training
+            set and afterwards you can use the test set to see how the system performs. Using the test set the system
+            doesn't
+            learn anymore.
+            <br>
+            To improve the system you have to create a new version of the existing system and feed it with new training
+            data.
+            The new system replaces the old system.
+        </div>
+    </div>
+
+    <div class="blue-background">
+        <img src="/img/reinforcementLearning.png"
+             alt="A cartoon as an example for supervised and unsupervised learning"/>
+    </div>
+
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>Instance-based and Model-based Learning</h2>
+            Does the system work by simply comparing new data points to known data points or instead by
+            detecting patterns in the training data and building a predictive model?
+        </div>
+        <div class="text-align-left">
+            <h4>Instance-based Learning</h4>
+            The system produces a class label or a prediction based on the similarity of the nearest data in the
+            training set. Instance-based learning uses the solutions of similar past problems to solve new problems.
+            <h4>Model-based Learning</h4>
+            A model is built out of a set of examples. Then this model will be used to make predictions about a set of
+            new data.
+        </div>
+    </div>
+
+    <div>
+        <h2>Sources</h2>
+        <div class="row-flex-container">
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Types of ML" onclick="window.location.href='https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/ch01.html#landscape_chapter'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Picture 1" onclick="window.location.href='https://blog.algorithmia.com/introduction-to-unsupervised-learning/'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Picture 2" onclick="window.location.href='https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/ch01.html#landscape_chapter'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Instance-based Learning" onclick="window.location.href='https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-30164-8_409'" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+</div>
+
+<% include partials/footer.ejs %>

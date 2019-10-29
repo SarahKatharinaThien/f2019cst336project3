@@ -1,38 +1,96 @@
 <% include partials/header.ejs %>
 
 <header>
-    <h1>Sarah Katharina Thien</h1>
+    <h1 id="header">Machine Learning</h1>
 </header>
-<nav>
-    <hr width="50%" />
-    <a id="home" href="index.html">Home</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-    <a href="/joke">Joke</a>
-</nav>
+<div class="topnav">
+    <a id="main" href="/index">Home</a>
+    <a href="/types">Types of Machine Learning</a>
+    <a href="/challenges">Main Challenges</a>
+    <a href="/testing">Testing & Validating</a>
+</div>
 
-<br /><br />
-
-<main>
-
-    <figure id="me">
-        <img src="/img/IMG_4364_S.JPG" alt="Picture of Sarah Katharina Thien" />
-    </figure>
-
-    <div id="welcomeText">
-        Hello! <br />
-        <p>Thank you for visiting my professional portfolio website.</p>
-        <p>I am a third year Computer Science major<br />currently studying abroad for one semester at California State
-            University Monterey Bay.</p>
-        <p>Feel free to contact me!</p>
-
-        <br /><br />
-
-        <em>
-            "You have to set goals that are almost out of reach.<br />If you set a goal that is attainable without much
-            work or thought, <br />you are stuck with something below <strong>your true talent and potential</strong>."</em><br />
-        - Steve Garvey
+<br /><br /><br /><br />
+<div class="column-flex-container">
+    <div class="blue-background">
+        "It is impossible for humans to recognize patterns in a megabyte of data, <br>
+        but it's easy for machine learning tools to find hidden insights." <br>
+        - unknown author
     </div>
-</main>
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>What is Machine Learning?</h2>
+        </div>
+        <div class="text-align-left">
+            <p> Basically, Machine Learning is finding patterns in huge amounts of data and applying them to new data.</p>
+            <p>
+                A Machine Learning algorithm can find patterns in data by using statistics. The data can be anything that can be stored digitally: Pictures, texts, audio, ...
+            </p>
+            <p>
+                After training the algorithm with huge amounts of data, the pattern the algorithm has found can be applied to new data.
+            </p>
+        </div>
+    </div>
+    <div class="blue-background">
+        <img src="/img/patternRecognition.jpg" alt="A person showing a computer pictures of different objects and teaching the computer what these objects are." />
+    </div>
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>Where to apply Machine Learning?</h2>
+        </div>
+        <div class="text-align-left">
+            <p>
+                One of many areas where Machine Learning is applied are recommendation systems on platforms like Netflix and YouTube.
+            </p>
+            <p>
+                These platforms collect data about you and try to find pattern within that data. The goal is to e. g. give you recommendations on what to watch next by making a highly educated guess based on the patterns found in your data.
+            </p>
+            <p>
+                Other applications of Machine Learning can be search engines or voice assistants. There are endless opportunities for using Machine Learning.
+            </p>
+        </div>
+    </div>
+    <div class="blue-background">
+        <img src="/img/recommendationSystemCartoon.jpg" alt="A woman in a grocery store standing in front of a shelf saying: customers who bought a banana also bought carrots, bread, ..." />
+    </div>
+    <div>
+        <h2>Sources</h2>
+        <div class="row-flex-container">
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Navigation Bar" onclick="window.location.href='https://www.w3schools.com/howto/howto_js_topnav.asp'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Quote" onclick="window.location.href='https://www.vijilent.com/top-nine-things-to-know-about-machine-learning/'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Machine Learning" onclick="window.location.href='https://www.technologyreview.com/s/612437/what-is-machine-learning-we-drew-you-another-flowchart/'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Picture 1" onclick="window.location.href='https://i.redd.it/sx2681neiyp11.jpg'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Picture 2" onclick="window.location.href='https://www.altexsoft.com/media/2018/06/CustomersWhoBought3.jpg'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Sticky" onclick="window.location.href='https://www.w3schools.com/howto/howto_js_scroll_to_top.asp'" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+</div>
 
 <% include partials/footer.ejs %>

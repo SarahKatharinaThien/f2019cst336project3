@@ -1,0 +1,81 @@
+<% include partials/header.ejs %>
+
+<header>
+    <h1 id="header">Machine Learning</h1>
+</header>
+<!--Source: look at Sources -> Navigation Bar-->
+<div class="topnav">
+    <a href="/index">Home</a>
+    <a href="/types">Types of Machine Learning</a>
+    <a id="challenges" href="/challenges">Main Challenges</a>
+    <a href="/test">Testing & Validating</a>
+</div>
+
+<br /><br /><br /><br />
+
+<div id="content" class="column-flex-container">
+    <div class="blue-background">
+        Machine Learning is about selecting a learning algorithm and training it on data.
+        <br>
+        So what can possibly go wrong?
+        <br>
+        The answer is: bad algorithm and bad data
+    </div>
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>BAD DATA</h2>
+        </div>
+        <div class="text-align-left">
+            <h4>Insufficient Quantity of Training Data</h4>
+            Most algorithms need huge amounts of data to work properly
+            <h4>Nonrepresentative Training Data</h4>
+            Your algorithm is less likely to perform well if your data is not representative of the new cases you want to apply your algorithm to
+            <h4>Poor-Quality Data</h4>
+            For the algorithm it is hard to detect the underlying patterns in the data if it is full of outliers, errors and noise which makes the algorithm less likely to perform well
+            <h4>Irrelevant Features</h4>
+            The data has to contain enough relevant features in order for the system to be capable of learning, which can be avoided by coming up with a good set of features to train on
+        </div>
+    </div>
+    <div class="blue-background">
+        <img src="/img/badDataCartoon.png" alt="A cartoon making fun about bad data." />
+    </div>
+    <div class="row-flex-container">
+        <div class="topic-left">
+            <h2>BAD <br> ALGORITHM</h2>
+        </div>
+        <div class="text-align-left">
+            <h4>Overfitting the Training Data</h4>
+            The model performs well on the training data but is too flexible, so it does not generalize well
+            <h4>Underfitting the Training Data</h4>
+            The model is too simple to learn the underlying patterns in the data
+        </div>
+    </div>
+    <div class="blue-background">
+        <img src="/img/overfittingGoodFitUnderfittingData.png" alt="A diagram showing the difference between overfitting, a good fit and underfitting." />
+    </div>
+    <div>
+        <h2>Sources</h2>
+        <div class="row-flex-container">
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Main Challenges" onclick="window.location.href='https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/ch01.html#landscape_chapter'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Picture 1" onclick="window.location.href='https://miro.medium.com/max/742/0*Pnypj3flKzC2dR8F.png'" />
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input class="link-button" type="button" value="Picture 2" onclick="window.location.href='https://miro.medium.com/max/2250/1*_7OPgojau8hkiPUiHoGK_w.png'" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+</div>
+
+<% include partials/footer.ejs %>

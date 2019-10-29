@@ -14,15 +14,15 @@ app.get("/index", function (req, res) {
 });
 
 app.get("/about", function (req, res) {
-    res.render("about.html");
+    res.render("challenges.html");
 });
 
 app.get("/contact", function (req, res) {
-    res.render("contact.html");
+    res.render("testing.html");
 });
 
 app.get("/joke", function (req, res) {
-    res.render("joke.html");
+    res.render("types.html");
 });
 
 // server listener
