@@ -1,14 +1,13 @@
 const express = require("express");
 const app = express();
 const knockknock = require("knock-knock-jokes");
-const joke = knockknock();
 
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 // routes
 app.get("/", function (req, res) {
-   res.render("index.ejs", {"joke": joke});
+   res.render("index.ejs", {"joke": knockknock()});
 });
 
 app.get("/challenges", function (req, res) {
