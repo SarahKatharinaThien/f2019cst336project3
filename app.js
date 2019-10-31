@@ -8,7 +8,7 @@ app.use(express.static("public"));
 
 // routes
 app.get("/", function (req, res) {
-   res.render("index.html", {"joke": joke});
+   res.render("index.ejs", {"joke": joke});
 });
 
 app.get("/challenges", function (req, res) {
